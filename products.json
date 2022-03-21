@@ -1,10 +1,46 @@
-"groups": [
-    {
-        "id": 1,
-        "name": ,
-        "products":  ,
-        "image":  ,
-        "description":  ,
-        "price":  ,
-    }
-]
+{
+    "products": [
+        {
+            "id": 0,
+            "name": "Americano Pure",
+            "price": 15,
+            "image": "imgs/pexels-movidagrafica-barcelona-1474994.jpg",
+            "currency": "USD"
+        },
+        {
+            "id": 1,
+            "name": "Mexican Powder",
+            "price": 19.9,
+            "image": "imgs/pexels-movidagrafica-barcelona-1474994.jpg",
+            "currency": "USD"
+        },
+        {
+            "id": 2,
+            "name": "Brazilian Coffee",
+            "price": 25,
+            "image": "imgs/pexels-movidagrafica-barcelona-1474994.jpg",
+            "currency": "USD"
+        },
+        {
+            "id": 3,
+            "name": "Canadian Flavour",
+            "price": 29.9,
+            "image": "imgs/pexels-movidagrafica-barcelona-1474994.jpg",
+            "currency": "USD"
+        },
+        {
+            "id": 4,
+            "name": "European Coffee",
+            "price": 21.9,
+            "image": "imgs/pexels-movidagrafica-barcelona-1474994.jpg",
+            "currency": "USD"
+        },
+        {
+            "id": 5,
+            "name": "African Powder",
+            "price": 39.9,
+            "image": "imgs/pexels-movidagrafica-barcelona-1474994.jpg",
+            "currency": "USD"
+        }
+    ]
+}

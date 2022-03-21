@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
     <!-- Link to Css -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Box-Icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+  
 </head>
 
 <body>
@@ -29,7 +30,10 @@
         </ul>
         <!-- Icon -->
         <div class="header-icon">
+            <button id="btn-cart">
             <i class='bx bx-cart-alt'></i>
+        <span class="btn-cart-badge"></span>
+    </button>
             <i class='bx bx-search' id="search-icon"> </i>
         </div>
         <!-- Search Box -->
@@ -76,8 +80,9 @@
                 <h2>Our popular products</h2>
             </div>
             <!-- Container -->
-            <div class="products-container">
-                <div class="box">
+            <div class="products-container" id="products-list">
+                <!-- <article class="card"></article> -->
+                <!--<div class="box"> 
                     <img src="imgs/pexels-movidagrafica-barcelona-1474994.jpg" alt="">
                     <h3>Americano Pure</h3>
                     <div class="content">
@@ -85,7 +90,8 @@
                         <a href="#">Add to Cart</a>
                     </div>
                 </div>
-
+</article>
+                <article class="card">
                 <div class="box">
                     <img src="imgs/pexels-movidagrafica-barcelona-1474994.jpg" alt="">
                     <h3>Mexican Powder</h3>
@@ -94,7 +100,8 @@
                         <a href="#">Add to Cart</a>
                     </div>
                 </div>
-
+            </article>
+            <article class="card">
                 <div class="box">
                     <img src="imgs/pexels-movidagrafica-barcelona-1474994.jpg" alt="">
                     <h3>Brazilian Coffee</h3>
@@ -103,7 +110,8 @@
                         <a href="#">Add to Cart</a>
                     </div>
                 </div>
-
+            </article>
+            <article class="card">
                 <div class="box">
                     <img src="imgs/pexels-movidagrafica-barcelona-1474994.jpg" alt="">
                     <h3>Canadian flavour</h3>
@@ -112,7 +120,8 @@
                         <a href="#">Add to Cart</a>
                     </div>
                 </div>
-
+            </article>
+            <article class="card">
                 <div class="box">
                     <img src="imgs/pexels-movidagrafica-barcelona-1474994.jpg" alt="">
                     <h3>European Coffee</h3>
@@ -121,7 +130,8 @@
                         <a href="#">Add to Cart</a>
                     </div>
                 </div>
-
+            </article>
+            <article class="card">
                 <div class="box">
                     <img src="imgs/pexels-movidagrafica-barcelona-1474994.jpg" alt="">
                     <h3>African Powder</h3>
@@ -129,7 +139,8 @@
                         <span>$39.9</span>
                         <a href="#">Add to Cart</a>
                     </div>
-                </div>
+                </article>
+                </div> -->
             </div>
     </section>
     <!-- Customers -->
@@ -239,7 +250,18 @@
                 <span><i class='bx bxs-phone'></i>21 2548-5856</span>
                 <span><i class='bx bxs-envelope'></i>coffee@shop.com.br</span>
             </div>
+            <br>
+            <br>
+            <p>Send a message on WhatsApp:</p>
+            <a href="https://api.whatsapp.com/send/?phone=553199999999&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido" target="_blank">
+              <i class="fa-brands fa-whatsapp-square"></i>
+              (21) 99999-9999
+            </a>
     </section>
+   
+
+
+
     <!-- Copyright-->
     <div class="copyright">
         <p>&#169; Marcelo Lorenzo All Rights Reserved</p>
@@ -247,7 +269,24 @@
 
 
 
-
+ <!-- Carrinho -->
+ <aside class="cart-sidebar">
+    <button id="btn-close-cart">
+        <i class='bx bxs-x-circle' ></i>    </button>
+    <div id="empty-cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <p class="h2">Your bag is empty.</p>
+    </div>
+    <div id="cart-with-products">
+        <p class="h2">Order Summary:</p>
+        <ul></ul>
+        <div class="cart-total">
+            <p class="h2">Total</p>
+        </div>
+    </div>
+    <button class="btn btn-outline" id="btn-add-more">Add more itens</button>
+    <a class="btn btn-main" href="fazer-pedido.html">Place the order</a>
+</aside>
 
 
 
@@ -265,5 +304,4 @@
     <!--LINK TO JS-->
     <script src="main.js"></script>
 </body>
-
 </html>
